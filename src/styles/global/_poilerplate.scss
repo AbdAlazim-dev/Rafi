@@ -1,3 +1,5 @@
+@use "./colors" as *;
+@use "./typography" as *;
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,13 @@
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: $titles-font;
   position: relative;
 }
 
 html {
   font-size: 62.5%;
+  direction: rtl;
 }
 
 /* global */
