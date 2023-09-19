@@ -1,7 +1,9 @@
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import Weekly from "./Pages/Weekly";
-import Catogaries from "./Pages/Catogaries";
+import Catogary from "./Pages/catogary";
+import CatogaryHeader from "./components/CatogaryHeader";
+import NotFound from "./Pages/NotFound";
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -10,10 +12,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/weekly" element={<Weekly />} />
-        <Route path="/catogaries">
-          <Route index element={<Catogaries />} />
-          <Route path=":catogary" />
+        <Route path="/catogaries" element={<CatogaryHeader />}>
+          <Route path=":catogary" element={<Catogary />} />
         </Route>
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
   );

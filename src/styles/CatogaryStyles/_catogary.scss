@@ -1,0 +1,13 @@
+@use "../global/" as *;
+
+.picked-catogary {
+  min-height: 100vh;
+  padding-top: 10rem;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}

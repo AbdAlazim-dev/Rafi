@@ -1,0 +1,57 @@
+@use "../global/" as *;
+
+.catogary-header {
+  padding-top: 15rem;
+  height: 50vh;
+
+  position: relative;
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home-icon {
+    position: absolute;
+    left: 5rem;
+    margin: 2rem;
+    top: 15rem;
+    font-size: 2rem;
+    color: $bg-Lgreen;
+    font-family: $titles-font;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__current {
+    color: $text-black;
+    font-size: $h2-size;
+    font-weight: 600;
+    font-family: $titles-font;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    button {
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+      font-size: $h3-size;
+      font-family: $titles-font;
+      cursor: pointer;
+    }
+    a {
+      border: 4px solid $bg-Lgreen;
+      padding: 0.2rem 1rem;
+      color: $text-black;
+    }
+  }
+}
+.catogary.active {
+  background-color: $bg-Lgreen;
+  color: white !important;
+}

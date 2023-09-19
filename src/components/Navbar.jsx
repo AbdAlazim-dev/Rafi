@@ -9,6 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
   const [cartModal, setCartModal] = useState(false);
+  const [sticky, setSticky] = useState(false);
   const cart = useSelector((state) => state.cart);
 
   const handleCartModal = () => {
@@ -18,6 +19,16 @@ function Navbar() {
   const handleMobileNav = () => {
     setMobileNav(!mobileNav);
   };
+
+  const handleScroll = () => {
+    if (window.scrollY < 10) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <header>
       <nav className={`mobile-nav ${mobileNav && "nav-open"}`}>
@@ -48,7 +59,7 @@ function Navbar() {
         <div className="cart-modal__content"></div>
       </div>
       <div className="container">
-        <nav className="larg-devices-nav">
+        <nav className={`larg-devices-nav ${sticky && "top-header"}`}>
           <NavLink to="/">
             <img src={Logo} alt="rafi-logo" />
           </NavLink>

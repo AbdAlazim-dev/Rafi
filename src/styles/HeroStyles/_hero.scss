@@ -1,1 +1,78 @@
 @use "../global/" as *;
+.hero {
+  padding: 12rem 0 0 0;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../images/home-images/rtl-hero-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 950px) {
+      justify-content: center;
+    }
+  }
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 375px;
+  height: 375px;
+  background-color: $bg-Lgreen;
+  color: $text-white;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  border-radius: 50%;
+  @media (max-width: 850px) {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+
+  font-family: $text-font;
+  box-shadow: 0px 0px 0 10px #bee343c2, 0px 0px 0 20px #bee34388;
+  h1 {
+    font-size: $h1-size;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    @media (max-width: 850px) {
+      font-size: $h2-size;
+    }
+  }
+  p {
+    font-size: $h3-size;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @media (max-width: 850px) {
+      font-size: $h4-size;
+    }
+  }
+  span {
+    color: #071952;
+  }
+  button {
+    font-size: $h3-size;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: $text-font;
+    color: white;
+    background-color: #071952;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgb(35, 48, 86);
+      color: $text-white;
+    }
+  }
+}

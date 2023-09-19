@@ -3,21 +3,33 @@ header {
   -webkit-box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
   overflow: hidden;
-  //   position: fixed;
+  .container {
+    width: 100%;
+  }
 }
+
 .larg-devices-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  &.top-header {
+    height: 14rem;
+  }
+  height: 10rem;
   img {
     width: 75px;
   }
   &__links {
     display: flex;
-    gap: 4rem;
-    font-size: $h2-size;
+    gap: 2.5rem;
+    font-size: $h3-size;
     font-weight: 500;
     font-family: $text-font;
     list-style: none;
@@ -30,10 +42,10 @@ header {
     }
     button {
       margin: 0 1.5rem;
-      font-size: $h2-size;
+      font-size: $h3-size;
       border: none;
       background-color: white;
-      padding-top: 10px;
+      // padding-top: 10px;
       cursor: pointer;
       position: relative;
     }
@@ -83,6 +95,7 @@ header {
     }
   }
 }
+
 //Mobile navigation
 .mobile-nav {
   position: fixed;
@@ -122,6 +135,7 @@ header {
     }
   }
 }
+
 .nav-open {
   left: 0;
   opacity: 1;
@@ -142,27 +156,31 @@ header {
     width: 100vw;
   }
   &__header {
-    -webkit-box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
-    box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0px 4px 5px -5px #bee343;
+    -moz-box-shadow: 0px 4px 5px -5px #bee343;
+    box-shadow: 0px 4px 5px -5px #bee343;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 3.2rem 0;
+    padding: 3.2rem 2rem;
     font-family: $text-font;
     h2 {
       font-size: $h2-size;
       font-weight: 700;
+      span {
+        color: #bee343;
+      }
     }
     svg {
       width: 3rem;
       height: 3rem;
-      margin-left: 3rem;
+      margin-left: rem;
       cursor: pointer;
     }
   }
 }
+
 .cart-open {
   right: 40%;
   opacity: 1;
@@ -170,6 +188,7 @@ header {
     right: 0;
   }
 }
+
 .active {
   color: $bg-Lgreen !important;
 }
