@@ -152,6 +152,7 @@ header {
   z-index: 6;
   padding-top: 1rem;
   transition: all 0.3s ease-in-out;
+  overflow: scroll;
   @media (max-width: 750px) {
     width: 100vw;
   }
@@ -177,6 +178,99 @@ header {
       height: 3rem;
       margin-left: rem;
       cursor: pointer;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+.cart-modal-product {
+  display: flex;
+  border-bottom: 1px solid $bg-Lbrown;
+  position: relative;
+  img {
+    width: 150px;
+    height: auto;
+  }
+  .remove-product {
+    position: absolute;
+    left: 1rem;
+    top: 5px;
+    font-size: $h3-size;
+    font-weight: 700;
+    color: $text-gray;
+    cursor: pointer;
+    &:hover {
+      color: $bg-Lgreen;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    h4 {
+      font-size: $h3-size;
+      font-weight: 700;
+    }
+    p {
+      font-size: $h3-size;
+      font-weight: 600;
+      color: $text-gray;
+    }
+  }
+  &__name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__quantity-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    .cart-product__quantity {
+      display: flex;
+      flex-direction: column;
+      button {
+        border: none;
+        background-color: $bg-Lgreen;
+        font-size: $h3-size;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: $bg-Lgreen;
+        }
+      }
+    }
+  }
+}
+.total-cost-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  button {
+    background-color: initial;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-weight: 700;
+    font-family: $text-font;
+    cursor: pointer;
+    &:hover {
+      background-color: $bg-Lgreen;
+      color: white;
+      border: none;
     }
   }
 }

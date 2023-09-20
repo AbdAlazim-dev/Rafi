@@ -1,0 +1,80 @@
+@use "../global/" as *;
+
+.product-page {
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
+    gap: 4rem;
+    &__image {
+      flex: 1;
+      img {
+        width: 200%;
+        height: auto;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: $h2-size;
+    h2 {
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    .price {
+      font-size: $h2-size;
+      font-weight: 500;
+      color: $text-gray;
+    }
+    .tax {
+      font-size: $h4-size;
+      font-weight: 500;
+      color: $text-gray;
+    }
+  }
+  &__button {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+  }
+  &__add-to-cart,
+  &__add-to-weekly {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: $bg-Lgreen;
+    color: white;
+    font-size: $h3-size;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    // width: 100%;
+  }
+  .recipe {
+    margin-top: 2rem;
+    padding: 0 8rem;
+    @media (max-width: 950px) {
+      padding: 0 2rem;
+    }
+    hr {
+      border: 1px solid $bg-Lbrown;
+      margin: 2rem 0;
+    }
+    h5 {
+      font-size: $h3-size;
+    }
+    ul {
+      font-size: $h4-size;
+      color: $text-gray;
+    }
+  }
+}

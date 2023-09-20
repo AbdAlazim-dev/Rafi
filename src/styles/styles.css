@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   position: relative;
@@ -174,6 +179,7 @@ header .container {
   z-index: 6;
   padding-top: 1rem;
   transition: all 0.3s ease-in-out;
+  overflow: scroll;
 }
 @media (max-width: 750px) {
   .cart-modal {
@@ -201,6 +207,101 @@ header .container {
   height: 3rem;
   margin-left: rem;
   cursor: pointer;
+}
+.cart-modal__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.cart-modal-product {
+  display: flex;
+  border-bottom: 1px solid #ffaa52;
+  position: relative;
+}
+.cart-modal-product img {
+  width: 150px;
+  height: auto;
+}
+.cart-modal-product .remove-product {
+  position: absolute;
+  left: 1rem;
+  top: 5px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  cursor: pointer;
+}
+.cart-modal-product .remove-product:hover {
+  color: #bde343;
+}
+.cart-modal-product__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+}
+.cart-modal-product__info h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.cart-modal-product__info p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.cart-modal-product__name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-modal-product__quantity-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+.cart-modal-product__quantity-price .cart-product__quantity {
+  display: flex;
+  flex-direction: column;
+}
+.cart-modal-product__quantity-price .cart-product__quantity button {
+  border: none;
+  background-color: #bde343;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+.cart-modal-product__quantity-price .cart-product__quantity button:hover {
+  color: #bde343;
+}
+
+.total-cost-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.total-cost-container button {
+  background-color: initial;
+  border: 2px solid #000;
+  color: #000;
+  font-size: 2rem;
+  padding: 1rem 3.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 700;
+  font-family: "Changa", sans-serif;
+  cursor: pointer;
+}
+.total-cost-container button:hover {
+  background-color: #bde343;
+  color: white;
+  border: none;
 }
 
 .cart-open {
@@ -506,4 +607,85 @@ header .container {
 .product-container__buttons .add-to-cart:hover {
   background-color: #bde343;
   color: white;
+}
+
+.product-page {
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+.product-page__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+@media (max-width: 950px) {
+  .product-page__content {
+    flex-direction: column;
+  }
+}
+.product-page__content__image {
+  flex: 1;
+}
+.product-page__content__image img {
+  width: 200%;
+  height: auto;
+}
+.product-page__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2.2rem;
+}
+.product-page__info h2 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.product-page__info .price {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+.product-page__info .tax {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+.product-page__button {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.product-page__add-to-cart, .product-page__add-to-weekly {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #bde343;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.product-page .recipe {
+  margin-top: 2rem;
+  padding: 0 8rem;
+}
+@media (max-width: 950px) {
+  .product-page .recipe {
+    padding: 0 2rem;
+  }
+}
+.product-page .recipe hr {
+  border: 1px solid #ffaa52;
+  margin: 2rem 0;
+}
+.product-page .recipe h5 {
+  font-size: 1.6rem;
+}
+.product-page .recipe ul {
+  font-size: 1.4rem;
+  color: #3a3a3a;
 }/*# sourceMappingURL=styles.css.map */

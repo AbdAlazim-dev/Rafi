@@ -4,7 +4,13 @@ import {
   addToWeekly,
   removeFromWeekly,
 } from "./slices/weeklySlice";
-import { cartReducer, addToCart, removeFromCart } from "./slices/cartSlice";
+import {
+  cartReducer,
+  addToCart,
+  removeFromCart,
+  increaceQuantity,
+  decreaceQuantity,
+} from "./slices/cartSlice";
 
 const store = configureStore({
   reducer: {
@@ -12,4 +18,12 @@ const store = configureStore({
     weekly: weeklyReducer,
   },
 });
-export { store, addToCart, removeFromCart, addToWeekly, removeFromWeekly };
+export {
+  store,
+  addToCart,
+  removeFromCart,
+  addToWeekly,
+  removeFromWeekly,
+  increaceQuantity,
+  decreaceQuantity,
+};
