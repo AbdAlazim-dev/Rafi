@@ -704,6 +704,9 @@ header .container {
 .product-page .recipe h5 {
   font-size: 1.6rem;
 }
+.product-page .recipe h3 {
+  font-size: 2.2rem;
+}
 .product-page .recipe ul {
   font-size: 1.4rem;
   color: #3a3a3a;
@@ -784,6 +787,7 @@ header .container {
 .product-card__image {
   height: 70%;
   position: relative;
+  transition: all 1.15s ease-in;
 }
 .product-card__image::before {
   content: "صفحة المنتج";
@@ -841,15 +845,28 @@ header .container {
   gap: 2rem;
 }
 
+.dont-miss {
+  padding-bottom: 10rem;
+}
+@media (max-width: 950px) {
+  .dont-miss {
+    padding: 0;
+  }
+}
 .dont-miss__content {
   display: flex;
   justify-content: space-between;
+  height: 40rem;
   overflow: hidden;
-  background-color: rgba(190, 227, 67, 0.5882352941);
+}
+@media (max-width: 950px) {
+  .dont-miss__content {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .dont-miss__image {
-  flex: 1;
-  height: 40rem;
+  overflow: hidden;
 }
 .dont-miss__image img {
   width: 100%;
@@ -857,13 +874,49 @@ header .container {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 950px) {
+  .dont-miss__image {
+    display: none;
+  }
+}
 .dont-miss__text {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: end;
-  flex-direction: column;
+  width: 50%;
   text-align: start;
-  padding: 0 10rem;
-  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 11rem;
+  background-color: #bde343;
+  font-weight: 600;
+  font-size: 2.2rem;
+  font-family: "Changa", sans-serif;
+  align-items: flex-start;
+  color: white;
+}
+@media (max-width: 950px) {
+  .dont-miss__text {
+    padding: 5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+.dont-miss__text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.dont-miss__text button {
+  background-color: black;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: all 0.15s;
+  font-family: "Changa", sans-serif;
+  width: 8rem;
 }/*# sourceMappingURL=styles.css.map */

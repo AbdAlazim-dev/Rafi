@@ -1,29 +1,68 @@
 @use "../global/" as *;
 
 .dont-miss {
+  padding-bottom: 10rem;
+  @media (max-width: 950px) {
+    padding: 0;
+  }
   &__content {
     display: flex;
     justify-content: space-between;
+    height: 40rem;
     overflow: hidden;
-    background-color: #bee34396;
+    @media (max-width: 950px) {
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__image {
-    flex: 1;
-    height: 40rem;
+    overflow: hidden;
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
+    @media (max-width: 950px) {
+      display: none;
+    }
   }
   &__text {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: end;
-    flex-direction: column;
+    width: 50%;
     text-align: start;
-    padding: 0 10rem;
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 11rem;
+    background-color: $bg-Lgreen;
+    font-weight: 600;
+    font-size: $h2-size;
+    font-family: $text-font;
+    align-items: flex-start;
+    color: white;
+    @media (max-width: 950px) {
+      padding: 5rem 2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    button {
+      background-color: black;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: 1rem;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      cursor: pointer;
+      border: 2px solid black;
+      transition: all 0.15s;
+      font-family: $text-font;
+      width: 8rem;
+    }
   }
 }

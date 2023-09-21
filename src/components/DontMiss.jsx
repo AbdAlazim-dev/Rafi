@@ -5,9 +5,6 @@ function DontMiss() {
     <section className="dont-miss">
       <div className="container">
         <div className="dont-miss__content">
-          <div className="dont-miss__image">
-            <img src={Dmiss} alt="picture with fresh fruits" />
-          </div>
           <div className="dont-miss__text">
             <h4>مقاضي رفيع الاسبوعية</h4>
             <p>
@@ -15,6 +12,9 @@ function DontMiss() {
               الاسبوعية
             </p>
             <button>تسوق</button>
+          </div>
+          <div className="dont-miss__image">
+            <img src={Dmiss} alt="picture with fresh fruits" />
           </div>
         </div>
       </div>
