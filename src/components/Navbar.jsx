@@ -5,6 +5,7 @@ import Logo from "../images/logo-images/fulllogo_transparent_nobuffer.png";
 import { GrCart } from "react-icons/gr";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GiShoppingCart } from "react-icons/gi";
 //redux stuff
 import { useSelector, useDispatch } from "react-redux";
 import { increaceQuantity, removeFromCart, decreaceQuantity } from "../store";
@@ -90,6 +91,17 @@ function Navbar() {
     }
   };
   window.addEventListener("scroll", handleScroll);
+  let cartContent;
+  if (cart.length === 0) {
+    cartContent = (
+      <div className="empty-cart">
+        <GiShoppingCart />
+        <h3>سلة المشتريات فارغة</h3>
+      </div>
+    );
+  } else {
+    cartContent = <TotalCost totalcost={totalcost} />;
+  }
 
   return (
     <header>
@@ -119,7 +131,7 @@ function Navbar() {
           <AiOutlineClose onClick={handleCartModal} />
         </div>
         <div className="cart-modal__content">{cartProducts}</div>
-        <TotalCost totalcost={totalcost} />
+        {cartContent}
       </div>
       <div className="container">
         <nav className={`larg-devices-nav ${sticky && "top-header"}`}>
@@ -131,7 +143,7 @@ function Navbar() {
               <NavLink to="/weekly">مقاضيك الأسبوعية</NavLink>
             </li>
             <li className="link">
-              <NavLink to="/catogaries">تسوق</NavLink>
+              <NavLink to="/catogaries/all">تسوق</NavLink>
             </li>
             <li className="buttons">
               <button className="cart-icon">

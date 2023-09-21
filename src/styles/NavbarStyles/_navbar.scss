@@ -195,6 +195,7 @@ header {
     width: 150px;
     height: auto;
   }
+
   .remove-product {
     position: absolute;
     left: 1rem;
@@ -249,6 +250,23 @@ header {
         }
       }
     }
+  }
+}
+.empty-cart {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: $h2-size;
+  font-weight: 700;
+  color: $text-gray;
+  font-family: $text-font;
+  height: 30rem;
+  svg {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
   }
 }
 .total-cost-container {

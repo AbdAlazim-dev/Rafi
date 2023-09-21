@@ -1,0 +1,29 @@
+@use "../global/" as *;
+
+.dont-miss {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #bee34396;
+  }
+  &__image {
+    flex: 1;
+    height: 40rem;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    text-align: start;
+    padding: 0 10rem;
+    font-size: 1.5rem;
+  }
+}

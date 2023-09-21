@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -280,6 +281,24 @@ header .container {
   color: #bde343;
 }
 
+.empty-cart {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  font-family: "Changa", sans-serif;
+  height: 30rem;
+}
+.empty-cart svg {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2rem;
+}
+
 .total-cost-container {
   display: flex;
   justify-content: space-between;
@@ -405,7 +424,6 @@ header .container {
 }
 
 .why-section {
-  height: 100vh;
   padding-top: 10rem;
 }
 .why-section__content {
@@ -503,6 +521,7 @@ header .container {
   font-size: 2.2rem;
   font-weight: 600;
   font-family: "Cairo", sans-serif;
+  margin-bottom: 4rem;
 }
 .catogary-header__menu {
   display: flex;
@@ -620,7 +639,7 @@ header .container {
   align-items: center;
   gap: 4rem;
 }
-@media (max-width: 950px) {
+@media (max-width: 750px) {
   .product-page__content {
     flex-direction: column;
   }
@@ -688,4 +707,163 @@ header .container {
 .product-page .recipe ul {
   font-size: 1.4rem;
   color: #3a3a3a;
+}
+.product-page .recipe .recipe__steps {
+  color: #3a3a3a;
+  font-size: 1.4rem;
+}
+
+.product-slider {
+  height: 100vh;
+  padding: 10rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.product-slider .container {
+  width: 100%;
+}
+.product-slider__btns-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.product-slider__btns-title .btns {
+  display: flex;
+  gap: 2rem;
+}
+.product-slider__btns-title .btns button {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  background-color: #bde343;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.product-slider h3 {
+  color: #000000;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Cairo", sans-serif;
+}
+.product-slider__content {
+  display: flex;
+  gap: 2.2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 1rem 0.6rem;
+  position: relative;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+.product-slider__content::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid rgba(255, 171, 82, 0.3764705882);
+  border: none;
+  cursor: pointer;
+  min-width: calc(250px - 1.1rem);
+  transition: all 0.15s ease-in;
+  justify-content: space-between;
+}
+.product-card:hover {
+  outline: 1px solid #ffab52;
+}
+.product-card__image {
+  height: 70%;
+  position: relative;
+}
+.product-card__image::before {
+  content: "صفحة المنتج";
+  position: absolute;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 1rem;
+  background-color: #bde343;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white;
+  display: none;
+  opacity: 0;
+  transition: all 1.15s ease-in;
+}
+.product-card__image:hover::before {
+  display: flex;
+  opacity: 0.8;
+  top: 50%;
+}
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.product-card__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+.product-card__content button {
+  background: #ffab52;
+  border: none;
+  font-family: "Changa", sans-serif;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  color: white;
+}
+.product-card__content button:hover {
+  background: #bde343;
+}
+.product-card__content__name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.dont-miss__content {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: rgba(190, 227, 67, 0.5882352941);
+}
+.dont-miss__image {
+  flex: 1;
+  height: 40rem;
+}
+.dont-miss__image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dont-miss__text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  text-align: start;
+  padding: 0 10rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
