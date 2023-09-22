@@ -28,6 +28,44 @@ html {
   padding: 0 19px;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bde343 #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #bde343;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #bde343;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #bde343;
+}
+
 header {
   box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
   width: 100%;
@@ -717,8 +755,7 @@ header .container {
 }
 
 .product-slider {
-  height: 100vh;
-  padding: 10rem 0;
+  padding: 15rem 0;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -757,11 +794,12 @@ header .container {
 }
 .product-slider__content {
   display: flex;
-  gap: 2.2rem;
+  gap: 2rem;
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 1rem 0.6rem;
   position: relative;
+  width: 1200px;
   scroll-behavior: smooth;
   white-space: nowrap;
 }
@@ -777,7 +815,7 @@ header .container {
   outline: 1px solid rgba(255, 171, 82, 0.3764705882);
   border: none;
   cursor: pointer;
-  min-width: calc(250px - 1.1rem);
+  min-width: calc(200px - 2rem);
   transition: all 0.15s ease-in;
   justify-content: space-between;
 }
@@ -887,11 +925,16 @@ header .container {
   justify-content: center;
   padding: 0 11rem;
   background-color: #bde343;
-  font-weight: 600;
-  font-size: 2.2rem;
+  font-weight: 700;
+  font-size: 3.2rem;
   font-family: "Changa", sans-serif;
   align-items: flex-start;
   color: white;
+}
+@media (max-width: 1150px) {
+  .dont-miss__text {
+    font-size: 2.2rem;
+  }
 }
 @media (max-width: 950px) {
   .dont-miss__text {
@@ -903,8 +946,13 @@ header .container {
   }
 }
 .dont-miss__text p {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 400;
+}
+@media (max-width: 1150px) {
+  .dont-miss__text p {
+    font-size: 1.6rem;
+  }
 }
 .dont-miss__text button {
   background-color: black;

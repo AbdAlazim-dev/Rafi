@@ -17,11 +17,11 @@ function ProductSlider({ catogary, title }) {
   //slider controllers
   const slideLeft = () => {
     const slider = document.querySelector(".product-slider__content");
-    slider.scrollLeft -= 300;
+    slider.scrollLeft -= 200;
   };
   const slideRight = () => {
     const slider = document.querySelector(".product-slider__content");
-    slider.scrollLeft += 300;
+    slider.scrollLeft += 200;
   };
 
   return (

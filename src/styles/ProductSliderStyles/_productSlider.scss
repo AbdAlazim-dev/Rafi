@@ -1,8 +1,8 @@
 @use "../global/" as *;
 
 .product-slider {
-  height: 100vh;
-  padding: 10rem 0;
+  // height: 100vh;
+  padding: 15rem 0;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -42,11 +42,12 @@
 
   &__content {
     display: flex;
-    gap: 2.2rem;
+    gap: 2rem;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 1rem 0.6rem;
     position: relative;
+    width: 1200px;
     scroll-behavior: smooth;
     white-space: nowrap;
     &::-webkit-scrollbar {
