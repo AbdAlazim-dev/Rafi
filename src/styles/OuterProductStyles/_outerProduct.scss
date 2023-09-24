@@ -8,9 +8,43 @@
   &:hover {
     border: 2px solid $bg-Lbrown;
   }
-  img {
-    width: 100%;
-    height: auto;
+  &__image {
+    position: relative;
+
+    &::before {
+      content: "صفحة المنتج";
+      position: absolute;
+      width: 10rem;
+      height: 5rem;
+      border-radius: 1rem;
+      background-color: $bg-Lgreen;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 10 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: $h4-size;
+      color: white;
+      display: none;
+      opacity: 0;
+      transition: all 0.15s ease-in;
+    }
+    &:hover {
+      &::before {
+        display: flex;
+        opacity: 0.8;
+        top: 50%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
   }
   .product-info {
     padding: 1rem;

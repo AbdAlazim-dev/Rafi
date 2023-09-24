@@ -6,7 +6,7 @@
   outline: 1px solid #ffab5260;
   border: none;
   cursor: pointer;
-  min-width: calc(200px - 2rem);
+  min-width: 250px;
   transition: all 0.15s ease-in;
   justify-content: space-between;
   &:hover {
@@ -56,7 +56,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5px;
+    padding: 1rem;
+    gap: 1rem;
+    font-size: 1.4rem;
+
     button {
       background: #ffab52;
       border: none;

@@ -2,7 +2,7 @@
 
 .product-page {
   padding-top: 15rem;
-  padding-bottom: 10rem;
+
   &__content {
     width: 100%;
     display: flex;
@@ -57,31 +57,42 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 2rem;
-    // width: 100%;
+  }
+  hr {
+    border: 1px solid $bg-Lbrown;
+    margin: 2rem 0;
+  }
+  h5 {
+    font-size: $h2-size;
+    color: black;
+    margin-bottom: 5px;
+  }
+  h3 {
+    font-size: $h2-size;
   }
   .recipe {
     margin-top: 2rem;
-    padding: 0 8rem;
+
+    display: flex;
     @media (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__ingredients {
       padding: 0 2rem;
+      font-size: 1.4rem;
+      width: 100%;
+      margin-bottom: 5rem;
     }
-    hr {
-      border: 1px solid $bg-Lbrown;
-      margin: 2rem 0;
-    }
-    h5 {
-      font-size: $h3-size;
-    }
-    h3 {
-      font-size: $h2-size;
-    }
-    ul {
-      font-size: $h4-size;
-      color: $text-gray;
-    }
-    .recipe__steps {
+    &__steps {
+      width: 100%;
+      font-size: 1.4rem;
+      width: 100%;
       color: $text-gray;
       font-size: $h4-size;
+      padding: 0 2rem;
     }
   }
 }

@@ -5,6 +5,7 @@ import ProductCard from "./ProductCard";
 //icons
 import { FiArrowLeft } from "react-icons/fi";
 import { FiArrowRight } from "react-icons/fi";
+import { useEffect } from "react";
 
 function ProductSlider({ catogary, title }) {
   console.log(catogary);
@@ -17,12 +18,23 @@ function ProductSlider({ catogary, title }) {
   //slider controllers
   const slideLeft = () => {
     const slider = document.querySelector(".product-slider__content");
-    slider.scrollLeft -= 200;
+    slider.scrollLeft -= 250;
   };
   const slideRight = () => {
     const slider = document.querySelector(".product-slider__content");
-    slider.scrollLeft += 200;
+    slider.scrollLeft += 250;
   };
+  //slide left and right with keyboard
+  useEffect(() => {
+    const slider = document.querySelector(".product-slider__content");
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        slider.scrollLeft -= 250;
+      } else if (e.key === "ArrowRight") {
+        slider.scrollLeft += 250;
+      }
+    });
+  }, []);
 
   return (
     <section className="product-slider">
