@@ -12,19 +12,7 @@
     align-items: center;
     flex-direction: column;
   }
-  .home-icon {
-    position: absolute;
-    left: 5rem;
-    margin: 2rem;
-    top: 15rem;
-    font-size: 2rem;
-    color: $bg-Lgreen;
-    font-family: $titles-font;
-    cursor: pointer;
-    a {
-      text-decoration: none;
-    }
-  }
+
   &__current {
     color: $text-black;
     font-size: $h2-size;

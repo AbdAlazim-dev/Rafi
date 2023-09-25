@@ -3,6 +3,8 @@ import {
   weeklyReducer,
   addToWeekly,
   removeFromWeekly,
+  increaceWeeklyQuantity,
+  decreaceWeeklyQuantity,
 } from "./slices/weeklySlice";
 import {
   cartReducer,
@@ -26,4 +28,6 @@ export {
   removeFromWeekly,
   increaceQuantity,
   decreaceQuantity,
+  increaceWeeklyQuantity,
+  decreaceWeeklyQuantity,
 };

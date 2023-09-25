@@ -78,7 +78,12 @@ function ProductPage() {
           })}
         </div>
       </section>
-      <ProductSlider catogary={realatedCatogary} title="منتجات مشابهة" />
+      <ProductSlider
+        catogary={realatedCatogary}
+        title="منتجات مشابهة"
+        onAdd={addToCart}
+        buttonTitle="اضف الى السلة"
+      />
       <Footer />
     </>
   );

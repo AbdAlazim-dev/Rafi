@@ -7,7 +7,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import { FiArrowRight } from "react-icons/fi";
 import { useEffect } from "react";
 
-function ProductSlider({ catogary, title }) {
+function ProductSlider({ catogary, title, onAdd, buttonTitle }) {
   console.log(catogary);
   //data of the slider
   const dispatch = useDispatch();
@@ -54,11 +54,10 @@ function ProductSlider({ catogary, title }) {
           {filteredData.map((product) => {
             return (
               <ProductCard
+                buttonTitle={buttonTitle}
                 key={product.id}
                 product={product}
-                onClick={() => {
-                  dispatch(addToCart(product));
-                }}
+                onAdd={onAdd}
               />
             );
           })}

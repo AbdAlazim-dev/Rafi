@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../store";
 import { Link } from "react-router-dom";
 
-function ProductCard({ product }) {
+function ProductCard({ product, onAdd, buttonTitle }) {
   const dispatch = useDispatch();
   return (
     <div className="product-card">
@@ -21,10 +21,10 @@ function ProductCard({ product }) {
 
         <button
           onClick={() => {
-            dispatch(addToCart(product));
+            dispatch(onAdd(product));
           }}
         >
-          اضف الى السلة
+          {buttonTitle}
         </button>
       </div>
     </div>

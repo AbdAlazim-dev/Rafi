@@ -27,7 +27,7 @@ const data = [
     image: apple,
     category: "fruits",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "تهامة",
     quantity: 1,
     recipe: {
       name: "تفاح بالزبدة والقرفة",
@@ -49,7 +49,7 @@ const data = [
     image: bannana,
     category: "fruits",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "السودان",
     quantity: 1,
     recipe: {
       name: "موز بالشوكولاتة",
@@ -65,7 +65,7 @@ const data = [
     image: orange,
     category: "fruits",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "مصر",
     quantity: 1,
     recipe: {
       name: "عصير برتقال",
@@ -84,7 +84,7 @@ const data = [
     image: bathnjan,
     category: "vegetables",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "تهامة",
     quantity: 1,
     recipe: {
       name: "مسقعة",
@@ -107,7 +107,7 @@ const data = [
     image: botato,
     category: "vegetables",
     contain: "كيس 1 كيلو",
-    origin: "امريكا",
+    origin: "الطائف",
     quantity: 1,
     recipe: {
       name: "بطاطا مقلية",
@@ -122,7 +122,7 @@ const data = [
     image: carrot,
     category: "vegetables",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "الطائف",
     quantity: 1,
     recipe: {
       name: "سلطة جزر",
@@ -144,7 +144,7 @@ const data = [
     image: folfol,
     category: "vegetables",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "الطائف",
     quantity: 1,
     recipe: {
       name: "فلفل محشي",
@@ -166,7 +166,7 @@ const data = [
     image: fjl,
     category: "vegetables",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "الطائف",
     quantity: 1,
     recipe: {
       name: "سلطة فجل",
@@ -188,7 +188,7 @@ const data = [
     image: kazbara,
     category: "plants",
     contain: "ربطة 0,2 جرام",
-    origin: "امريكا",
+    origin: "الرياض",
     quantity: 1,
     recipe: {
       name: "سلطة كزبرة",
@@ -210,7 +210,7 @@ const data = [
     image: khs,
     category: "plants",
     contain: "ربطة 0,4 جرام",
-    origin: "امريكا",
+    origin: "الرياض",
     quantity: 1,
     recipe: {
       name: "سلطة خس",
@@ -232,7 +232,7 @@ const data = [
     image: onion,
     category: "vegetables",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "مكة",
     quantity: 1,
     recipe: {
       name: "البصل المخمر",
@@ -248,7 +248,7 @@ const data = [
     image: tomato,
     category: "vegetables",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "تهامة",
     quantity: 1,
     recipe: {
       name: "سلطة طماطم بالدكوة",
@@ -268,7 +268,7 @@ const data = [
     price: 0.99,
     image: shabat,
     category: "plants",
-    origin: "امريكا",
+    origin: "الباحة",
     quantity: 1,
     recipe: {
       name: "سلطة شبت",
@@ -289,7 +289,7 @@ const data = [
     image: mango,
     category: "fruits",
     contain: "كرتون 1 كيلو",
-    origin: "امريكا",
+    origin: "الطائف",
     quantity: 1,
     recipe: {
       name: "مانجو بالكريمة",
@@ -321,7 +321,7 @@ const data = [
     image: malfof,
     category: "vegetables",
     contain: "حبة 0.6 كيلو",
-    origin: "امريكا",
+    origin: "تهامة",
     quantity: 1,
     recipe: {
       name: "ملفوف محشي",
@@ -343,7 +343,7 @@ const data = [
     image: mint,
     category: "vegetables",
     contain: "ربطة 0.2 جرام",
-    origin: "امريكا",
+    origin: "المدينةالمنورة",
     quantity: 1,
     recipe: {
       name: "شاي بالنعاع",
@@ -359,7 +359,7 @@ const data = [
     image: wonion,
     category: "vegetables",
     contain: "كيس 1 كيلو",
-    origin: "امريكا",
+    origin: "الطائف",
     quantity: 1,
     recipe: {
       name: "البصل المخمر",
@@ -375,7 +375,7 @@ const data = [
     image: ananas,
     category: "fruits",
     contain: "حبة 0.8 كيلو",
-    origin: "امريكا",
+    origin: "القصيم",
     quantity: 1,
     recipe: {
       name: "اناناس بالكريمة",
@@ -391,7 +391,7 @@ const data = [
     image: bagdons,
     category: "plants",
     contain: "ربطة 0.2 جرام",
-    origin: "امريكا",
+    origin: "تهامة",
     quantity: 1,
     recipe: {
       name: "سلطة باجدونس",

@@ -1,19 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { TbHomeEco } from "react-icons/tb";
 function CatogaryHeader() {
   const [catogaryTitle, setCatogaryTitle] = useState("الكل");
 
   return (
     <section className="catogary-header">
       <div className="container">
-        <span className="home-icon">
-          <NavLink>
-            <TbHomeEco />
-            الرئيسية
-          </NavLink>{" "}
-        </span>
         <h4 className="catogary-header__current">{catogaryTitle}</h4>
         <div className="catogary-header__menu">
           <NavLink className="catogary" to="all">

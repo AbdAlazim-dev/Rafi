@@ -1,8 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+//check if there is a cart in local storage
+const loadCartFromLocalStorage = () => {
+  const cartData = localStorage.getItem("cart");
+  return cartData ? JSON.parse(cartData) : [];
+};
+
 const cartSlice = createSlice({
   name: "cart",
-  initialState: [],
+  initialState: loadCartFromLocalStorage(),
   reducers: {
     addToCart: (state, action) => {
       //check if item is already in cart
@@ -13,13 +19,20 @@ const cartSlice = createSlice({
       }
       //if not add it
       state.push(action.payload);
+      //save to local storage
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     removeFromCart: (state, action) => {
-      return state.filter((item) => item.id !== action.payload.id);
+      const newState = state.filter((item) => item.id !== action.payload.id);
+      // Update local storage
+      localStorage.setItem("cart", JSON.stringify(newState));
+      return newState;
     },
     increaceQuantity: (state, action) => {
       const index = state.findIndex((item) => item.id === action.payload.id);
       state[index].quantity++;
+      // Update local storage
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     decreaceQuantity: (state, action) => {
       const index = state.findIndex((item) => item.id === action.payload.id);
@@ -29,6 +42,8 @@ const cartSlice = createSlice({
       } else {
         state[index].quantity--;
       }
+      // Update local storage
+      localStorage.setItem("cart", JSON.stringify(state));
     },
   },
 });

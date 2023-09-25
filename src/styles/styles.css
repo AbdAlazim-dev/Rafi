@@ -476,7 +476,7 @@ header .container {
 }
 
 .why-section {
-  padding: 10rem;
+  padding: 2rem;
 }
 .why-section__content {
   display: flex;
@@ -554,19 +554,6 @@ header .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.catogary-header .home-icon {
-  position: absolute;
-  left: 5rem;
-  margin: 2rem;
-  top: 15rem;
-  font-size: 2rem;
-  color: #bde343;
-  font-family: "Cairo", sans-serif;
-  cursor: pointer;
-}
-.catogary-header .home-icon a {
-  text-decoration: none;
 }
 .catogary-header__current {
   color: #000000;
@@ -1095,4 +1082,125 @@ header .container {
 }
 .credit-social .social-media-icons svg.mail {
   color: #bde343;
+}
+
+.week-list {
+  padding-top: 15rem;
+}
+.week-list h1 {
+  font-size: 2.2rem;
+}
+.week-list__content__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.week-list__content__header_row1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #bde343;
+  padding: 1rem 0;
+  gap: 1rem;
+  padding-right: 1rem;
+  border-radius: 6px;
+  font-size: 1.6rem;
+}
+.week-list__content__header_row1 svg {
+  color: #f3f3f3;
+  font-size: 1.6rem;
+}
+.week-list__content__header_row2 {
+  background-color: gray;
+  width: 100%;
+  height: 5px;
+  margin-top: 4rem;
+  border-radius: 6px;
+  position: relative;
+}
+.week-list__content__header_row2 .deleviry-bar {
+  overflow: hidden;
+}
+.week-list__content__header_row2 .deleviry-bar::before {
+  content: "0 ريال";
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1.6rem;
+}
+.week-list__content__header_row2 .deleviry-bar::after {
+  content: "120 ريال";
+  position: absolute;
+  top: 1rem;
+  font-size: 1.6rem;
+  right: 0;
+}
+.week-list__content__header_row2 .deleviry-bar__fill {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 5%;
+  background-color: #bde343;
+  border-radius: 6px;
+  transition: 0.7 ease-in-out;
+}
+.week-list__content__header_row2 .deleviry-bar__fill svg {
+  position: absolute;
+  top: -3rem;
+  color: Black;
+  font-size: 3.2rem;
+}
+.week-list__content__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+.week-list__content__body__product {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+}
+.week-list__content__body__product__info {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.week-list__content__body__product__info .quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+.week-list__content__body__product__info .quantity button {
+  width: 35px;
+  height: 35px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  background-color: #bde343;
+  color: white;
+  cursor: pointer;
+}
+.week-list__content__body__product img {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+}
+.week-list__content__body__product .close-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+.week-list__content__body .add-to-week-list-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

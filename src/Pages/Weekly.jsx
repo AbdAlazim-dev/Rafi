@@ -1,4 +1,18 @@
+import WeekList from "../components/WeekList";
+import ProductSlider from "../components/ProductSlider";
+import { addToWeekly } from "../store";
+import Footer from "../components/Footer";
 function Weekly() {
-  return <h1>Weekly</h1>;
+  return (
+    <>
+      <WeekList />
+      <ProductSlider
+        title="لا تنسى الأساسيات"
+        onAdd={addToWeekly}
+        buttonTitle="اضف لمقاضيك"
+      />
+      <Footer />
+    </>
+  );
 }
 export default Weekly;
