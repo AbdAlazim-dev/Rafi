@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import data from "../components/AllData";
 import { useDispatch } from "react-redux";
 import { addToCart, addToWeekly } from "../store";
-import { useState } from "react";
 import ProductSlider from "../components/ProductSlider";
 import Footer from "../components/Footer";
 

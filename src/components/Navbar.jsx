@@ -37,12 +37,10 @@ function Navbar() {
           <div className="cart-modal-product__info">
             <div className="cart-modal-product__name-price">
               <h4> {product.name}</h4>
-              <p>
-                {product.price} ريال, {product.contain}
-              </p>
+              <p>{product.contain}</p>
             </div>
             <div className="cart-modal-product__quantity-price">
-              <p>السعر: {totalProductPrice} ريال</p>
+              <p>السعر: {totalProductPrice.toFixed(2)} ريال</p>
               <div className="cart-product__quantity">
                 <button
                   onClick={() => {

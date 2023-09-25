@@ -279,21 +279,21 @@ header .container {
 }
 .cart-modal-product .remove-product {
   position: absolute;
-  left: 1rem;
-  top: 5px;
+  left: 0rem;
+  top: -1px;
   font-size: 1.6rem;
   font-weight: 700;
   color: #3a3a3a;
   cursor: pointer;
 }
 .cart-modal-product .remove-product:hover {
-  color: #bde343;
+  color: red;
 }
 .cart-modal-product__info {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
 }
 .cart-modal-product__info h4 {

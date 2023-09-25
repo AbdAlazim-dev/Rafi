@@ -7,7 +7,6 @@ import TotalCost from "./TotalCost";
 import { useSelector, useDispatch } from "react-redux";
 //actions creators
 import {
-  addToWeekly,
   removeFromWeekly,
   increaceWeeklyQuantity,
   decreaceWeeklyQuantity,

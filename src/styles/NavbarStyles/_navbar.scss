@@ -211,21 +211,21 @@ header {
 
   .remove-product {
     position: absolute;
-    left: 1rem;
-    top: 5px;
+    left: 0rem;
+    top: -1px;
     font-size: $h3-size;
     font-weight: 700;
     color: $text-gray;
     cursor: pointer;
     &:hover {
-      color: $bg-Lgreen;
+      color: red;
     }
   }
   &__info {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     h4 {
       font-size: $h3-size;

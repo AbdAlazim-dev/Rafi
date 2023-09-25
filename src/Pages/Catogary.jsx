@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import OuterProduct from "../components/outerProduct";
 import data from "../components/AllData";
 import Footer from "../components/Footer";
-
 function Catogary() {
   const { catogary } = useParams();
   let filteredData;
@@ -11,7 +10,6 @@ function Catogary() {
   } else {
     filteredData = data.filter((item) => item.category === catogary);
   }
-  console.log(filteredData);
 
   return (
     <>

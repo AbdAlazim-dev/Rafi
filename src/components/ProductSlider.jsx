@@ -1,6 +1,4 @@
 import data from "./AllData";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../store";
 import ProductCard from "./ProductCard";
 //icons
 import { FiArrowLeft } from "react-icons/fi";
@@ -8,9 +6,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { useEffect } from "react";
 
 function ProductSlider({ catogary, title, onAdd, buttonTitle }) {
-  console.log(catogary);
   //data of the slider
-  const dispatch = useDispatch();
   let filteredData = data;
   if (catogary) {
     filteredData = data.filter((product) => product.category === catogary);
