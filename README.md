@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div style="text-align: center; height="500px">
   <img src="/src/images/logo-images/fulllogo_transparent.png" alt="Rafi Logo"/>
 </div>
 <p>
