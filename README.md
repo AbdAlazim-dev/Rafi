@@ -16,8 +16,8 @@ Live Demo : &#128073; <a href="">Website Live Demo</a>
 <h2>Screenshot of the projects 📸</h2>
 <div style="text-align: center;">
 Home Page : 🏡
-[home page](./src/images/Rafi-Projects-screenshots/HomePage.png)
-[product page](./src/images/Rafi-Projects-screenshots/ProductPage.png)
-[week list page](./src/images/Rafi-Projects-screenshots/WeekListPage.png)
-[catogary page](./src/images/Rafi-Projects-screenshots/CatogaryPage.png)
+![HomePage](https://github.com/AbdAlazim-dev/Rafi/assets/135723207/d0dd1070-ce23-4738-a922-521eb8a911ef)
+![ProductPage](https://github.com/AbdAlazim-dev/Rafi/assets/135723207/8246a47d-ea76-44c4-8fcd-76ec65245c9b)
+![WeekListPage](https://github.com/AbdAlazim-dev/Rafi/assets/135723207/e8b8d788-be71-4555-b074-01f72f0504a5)
+![CatogaryPage](https://github.com/AbdAlazim-dev/Rafi/assets/135723207/9e3d1016-9483-4a48-84f9-4a13bd476479)
 </div>
