@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index path="/" element={<Home />} />
         <Route path="/weekly" element={<Weekly />} />
         <Route path="/catogaries" element={<CatogaryHeader />}>
           <Route path=":catogary" element={<Catogary />} />
