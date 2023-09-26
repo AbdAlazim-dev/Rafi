@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-
-<div style="text-align: center;">
-  <img src="/src/images/logo-images/FullLogo.png" alt="Rafi Logo"/>
-=======
 <div style="text-align: center; height="500px">
   <img src="/src/images/logo-images/fulllogo_transparent.png" alt="Rafi Logo"/>
->>>>>>> b1b7e7ee5fd5dd585d2fd5117cbfc1ec292c0edb
 </div>
 <p>
 Rafi is a minmalist e-commerce website build with React, Redux, and scss, it's a responsive website, and it's a single page application, This website features a modern and intuitive design, with easy-to-use navigation.
