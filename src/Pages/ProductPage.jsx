@@ -9,6 +9,7 @@ import { useState } from "react";
 function ProductPage() {
   const [notify, setNotify] = useState(false);
   const [notifyTitle, setNotifyTitle] = useState("");
+  const { id } = useParams();
 
   const handleAddToCart = (product) => {
     setNotify(true);
@@ -26,7 +27,6 @@ function ProductPage() {
     }, 3000);
   }
   const dispatch = useDispatch();
-  const { id } = useParams();
   //search for the product with the same id
   const product = data.filter((product) => product.id === parseInt(id));
   //related catogary

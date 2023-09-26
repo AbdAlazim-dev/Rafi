@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
 function CatogaryHeader() {
   const [catogaryTitle, setCatogaryTitle] = useState("الكل");
 

@@ -84,7 +84,7 @@ function Navbar() {
 
   const handleMobileNav = () => {
     setMobileNav(!mobileNav);
-    window.top(0, 0);
+    () => window.scrollTo(0, 0);
   };
   //handle sticky navbar
   const handleScroll = () => {
@@ -176,7 +176,7 @@ function Navbar() {
             </NavLink>
             <ul className="larg-devices-nav__links">
               <li className="link">
-                <NavLink onClick={() => window.top(0, 0)} to="/weekly">
+                <NavLink onClick={() => window.scrollTo(0, 0)} to="/weekly">
                   <SlCalender />
                   مقاضيك الأسبوعية
                 </NavLink>
@@ -184,7 +184,7 @@ function Navbar() {
               <li className="link">
                 <NavLink
                   onClick={() => {
-                    window.top(0, 0);
+                    () => window.scrollTo(0, 0);
                   }}
                   to="/catogaries/all"
                 >
