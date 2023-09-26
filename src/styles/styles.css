@@ -858,6 +858,7 @@ header .container {
 }
 .product-page .recipe {
   margin-top: 2rem;
+  padding: 0 4rem;
   display: flex;
 }
 @media (max-width: 950px) {
@@ -865,6 +866,7 @@ header .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0;
   }
 }
 .product-page .recipe__ingredients {

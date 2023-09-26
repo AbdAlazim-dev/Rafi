@@ -113,12 +113,13 @@
   }
   .recipe {
     margin-top: 2rem;
-
+    padding: 0 4rem;
     display: flex;
     @media (max-width: 950px) {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      padding: 0;
     }
 
     &__ingredients {
