@@ -147,23 +147,24 @@
     }
     form {
       display: flex;
-      justify-content: center;
       align-items: center;
       width: 100%;
       gap: 2rem;
+      @media (max-width: 850px) {
+        flex-wrap: wrap;
+      }
     }
     label {
       font-size: 2rem;
       font-family: $text-font;
-      width: 13rem;
     }
     .day {
-      width: 100%;
+      width: 300px;
       display: flex;
       gap: 2rem;
       align-items: center;
       select {
-        width: 100%;
+        width: 150px;
         margin-bottom: 2rem;
         font-size: $h2-size;
         font-weight: 600;
@@ -184,11 +185,12 @@
       }
     }
     .time {
-      width: 100%;
+      width: 400px;
       display: flex;
       gap: 2rem;
       align-items: center;
       input {
+        width: 150px;
         margin-bottom: 2rem;
         font-size: $h2-size;
         font-weight: 600;

@@ -46,8 +46,14 @@ header {
     font-family: $text-font;
     list-style: none;
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
       color: $text-black;
+      svg {
+        margin-left: 5px;
+      }
     }
     .buttons {
       display: flex;
@@ -140,6 +146,12 @@ header {
       font-size: $h1-size;
       font-family: $text-font;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        margin-left: 5px;
+      }
       &:hover {
         color: $bg-Lgreen;
         transition: all 0.3s;
@@ -206,7 +218,7 @@ header {
   position: relative;
   padding-left: 1rem;
   img {
-    width: 150px;
+    width: 130px;
     height: auto;
   }
 

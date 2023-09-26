@@ -6,6 +6,7 @@ import { GrCart } from "react-icons/gr";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiShoppingCart } from "react-icons/gi";
+import { SlCalender } from "react-icons/sl";
 //redux stuff
 import { useSelector, useDispatch } from "react-redux";
 import { increaceQuantity, removeFromCart, decreaceQuantity } from "../store";
@@ -22,7 +23,6 @@ function Navbar() {
   let totalcost;
   //fetch cart and weekList from redux store
   const cart = useSelector((state) => state.cart);
-  const weekList = useSelector((state) => state.weekly);
   //display cart products
   const cartProducts = cart.map((product, index) => {
     const totalProductPrice = product.price * product.quantity;
@@ -84,6 +84,7 @@ function Navbar() {
 
   const handleMobileNav = () => {
     setMobileNav(!mobileNav);
+    window.top(0, 0);
   };
   //handle sticky navbar
   const handleScroll = () => {
@@ -149,6 +150,7 @@ function Navbar() {
             </li>
             <li>
               <NavLink to="/weekly" onClick={handleMobileNav}>
+                <SlCalender />
                 مقاضيك الأسبوعية
               </NavLink>
             </li>
@@ -174,12 +176,20 @@ function Navbar() {
             </NavLink>
             <ul className="larg-devices-nav__links">
               <li className="link">
-                <NavLink to="/weekly">
-                  ({weekList.length})مقاضيك الأسبوعية
+                <NavLink onClick={() => window.top(0, 0)} to="/weekly">
+                  <SlCalender />
+                  مقاضيك الأسبوعية
                 </NavLink>
               </li>
               <li className="link">
-                <NavLink to="/catogaries/all">تسوق</NavLink>
+                <NavLink
+                  onClick={() => {
+                    window.top(0, 0);
+                  }}
+                  to="/catogaries/all"
+                >
+                  تسوق
+                </NavLink>
               </li>
               <li className="buttons">
                 <button className="cart-icon">

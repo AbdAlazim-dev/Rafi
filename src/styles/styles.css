@@ -115,8 +115,14 @@ header .container {
   list-style: none;
 }
 .larg-devices-nav__links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #000000;
+}
+.larg-devices-nav__links a svg {
+  margin-left: 5px;
 }
 .larg-devices-nav__links .buttons {
   display: flex;
@@ -211,6 +217,12 @@ header .container {
   font-size: 3.2rem;
   font-family: "Changa", sans-serif;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav__links a svg {
+  margin-left: 5px;
 }
 .mobile-nav__links a:hover {
   color: #bde343;
@@ -275,7 +287,7 @@ header .container {
   padding-left: 1rem;
 }
 .cart-modal-product img {
-  width: 150px;
+  width: 130px;
   height: auto;
 }
 .cart-modal-product .remove-product {
@@ -441,20 +453,10 @@ header .container {
   font-weight: 800;
   margin-bottom: 1rem;
 }
-@media (max-width: 850px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-}
 .hero-content p {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-}
-@media (max-width: 850px) {
-  .hero-content p {
-    font-size: 1.4rem;
-  }
 }
 .hero-content span {
   color: #071952;
@@ -468,6 +470,7 @@ header .container {
   color: white;
   background-color: #071952;
   border-radius: 5px;
+  margin-top: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -1354,24 +1357,27 @@ header .container {
 }
 .week-list .week-list-form form {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   gap: 2rem;
 }
+@media (max-width: 850px) {
+  .week-list .week-list-form form {
+    flex-wrap: wrap;
+  }
+}
 .week-list .week-list-form label {
   font-size: 2rem;
   font-family: "Changa", sans-serif;
-  width: 13rem;
 }
 .week-list .week-list-form .day {
-  width: 100%;
+  width: 300px;
   display: flex;
   gap: 2rem;
   align-items: center;
 }
 .week-list .week-list-form .day select {
-  width: 100%;
+  width: 150px;
   margin-bottom: 2rem;
   font-size: 2.2rem;
   font-weight: 600;
@@ -1391,12 +1397,13 @@ header .container {
   color: #3a3a3a;
 }
 .week-list .week-list-form .time {
-  width: 100%;
+  width: 400px;
   display: flex;
   gap: 2rem;
   align-items: center;
 }
 .week-list .week-list-form .time input {
+  width: 150px;
   margin-bottom: 2rem;
   font-size: 2.2rem;
   font-weight: 600;

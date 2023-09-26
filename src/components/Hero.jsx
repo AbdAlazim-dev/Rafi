@@ -5,11 +5,9 @@ function Hero() {
       <div className="container">
         <div className="hero-content">
           <h1>
-            مقاضي <span>رفيع </span> الاسبوعية
+            <span>رفيع </span>
           </h1>
-          <p>
-            اضف اصناف الى مقاضيك الأسبوعية واحصل على تخفيض <span>15%</span>
-          </p>
+          <p>خضروات وفواكه عضوية محلية طازجة دومًا</p>
           <Link to="/catogaries/all">
             <button>منتجاتنا</button>
           </Link>
