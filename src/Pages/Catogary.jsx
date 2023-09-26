@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import OuterProduct from "../components/outerProduct";
+import OuterProduct from "../components/OuterProduct";
 import data from "../components/AllData";
 import Footer from "../components/Footer";
 function Catogary() {
