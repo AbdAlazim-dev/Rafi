@@ -9,7 +9,7 @@ function Home() {
     <>
       <Hero />
       <ProductSlider
-        title="وصل حديثًا"
+        title="يوصلك طازج"
         onAdd={addToCart}
         buttonTitle="اضف للسلة"
       />

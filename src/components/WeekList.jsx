@@ -1,6 +1,7 @@
 import { BsFillPatchExclamationFill } from "react-icons/bs";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
+import WeekListFrom from "./WeekListForm";
 //components
 import TotalCost from "./TotalCost";
 //redux stuff
@@ -19,7 +20,6 @@ function WeekList() {
   const totalPrice = weekList.reduce((acc, curr) => {
     return acc + curr.price * curr.quantity;
   }, 0);
-  console.log(totalPrice);
 
   //percentage relative to 120
   let percentage = (totalPrice * 100) / 120;
@@ -55,7 +55,7 @@ function WeekList() {
                 >
                   +
                 </button>
-                <span>{product.quantity}</span>
+                <span className="product-quantitiy">{product.quantity}</span>
                 <button
                   //remove from same product
                   onClick={() => {
@@ -66,7 +66,9 @@ function WeekList() {
                 </button>
               </div>
               <div className="total-product-cost">
-                <span>{product.price * product.quantity} ريال</span>
+                <span>
+                  {(product.price * product.quantity).toFixed(2)} ريال
+                </span>
               </div>
             </div>
           </div>
@@ -103,7 +105,13 @@ function WeekList() {
           </div>
           <div className="week-list__content__body">
             {content}
-            {weekList.length > 0 && <TotalCost totalcost={totalPrice} />}
+
+            {weekList.length > 0 && (
+              <>
+                <WeekListFrom />
+                <TotalCost totalcost={totalPrice} />
+              </>
+            )}
           </div>
         </div>
       </div>

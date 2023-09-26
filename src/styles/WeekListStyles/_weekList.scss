@@ -79,6 +79,20 @@
         &__info {
           font-size: $h2-size;
           font-weight: 600;
+          h4 {
+            margin-bottom: 1rem;
+          }
+          p {
+            margin-bottom: 1rem;
+            font-size: $h3-size;
+            color: $text-gray;
+          }
+          .total-product-cost {
+            padding-top: 2rem;
+          }
+          .product-quantitiy {
+            font-size: $h2-size;
+          }
           .quantity {
             display: flex;
             align-items: center;
@@ -118,6 +132,73 @@
         align-items: center;
         font-size: $h2-size;
         font-weight: 600;
+      }
+    }
+  }
+  .week-list-form {
+    margin-top: 5rem;
+    .form-title {
+      font-size: $h2-size;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 2rem;
+    }
+    label {
+      font-size: 2rem;
+      font-family: $text-font;
+      width: 13rem;
+    }
+    .day {
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      select {
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: $h2-size;
+        font-weight: 600;
+        color: $text-gray;
+        border: none;
+        border-bottom: 1px solid $text-gray;
+        padding: 1rem 0;
+        background-color: transparent;
+        outline: none;
+        font-family: $text-font;
+        cursor: pointer;
+        option {
+          font-family: $text-font;
+          font-size: $h2-size;
+          font-weight: 600;
+          color: $text-gray;
+        }
+      }
+    }
+    .time {
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      input {
+        margin-bottom: 2rem;
+        font-size: $h2-size;
+        font-weight: 600;
+        color: $text-gray;
+        border: none;
+        border-bottom: 1px solid $text-gray;
+        padding: 1rem 0;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
       }
     }
   }

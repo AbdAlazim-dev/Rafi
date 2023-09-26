@@ -272,6 +272,7 @@ header .container {
   display: flex;
   border-bottom: 1px solid #ffaa52;
   position: relative;
+  padding-left: 1rem;
 }
 .cart-modal-product img {
   width: 150px;
@@ -477,6 +478,7 @@ header .container {
 
 .why-section {
   padding: 2rem;
+  padding-bottom: 10rem;
 }
 .why-section__content {
   display: flex;
@@ -697,8 +699,91 @@ header .container {
   color: white;
 }
 
+.notify-container {
+  position: fixed;
+  width: 250px;
+  text-align: center;
+  top: 5rem;
+  left: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 1rem 2rem;
+  z-index: 70;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.712);
+  transition: all 0.3s ease-in-out;
+}
+
+.noify-active {
+  top: 15rem;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+.noify-active ::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #bde343;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: both;
+}
+
+@keyframes slide {
+  100% {
+    left: -100%;
+  }
+}
 .product-page {
   padding-top: 15rem;
+}
+.product-page .container .add-product-notify {
+  position: fixed;
+  width: 250px;
+  text-align: center;
+  top: 5rem;
+  left: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 1rem 2rem;
+  z-index: 70;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.712);
+  transition: all 0.3s ease-in-out;
+}
+.product-page .container .noify-active {
+  top: 15rem;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+.product-page .container .noify-active ::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #bde343;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: both;
 }
 .product-page__content {
   width: 100%;
@@ -858,6 +943,44 @@ header .container {
   min-width: 250px;
   transition: all 0.15s ease-in;
   justify-content: space-between;
+}
+.product-card .notify-container {
+  position: fixed;
+  width: 350px;
+  text-align: center;
+  top: 5rem;
+  left: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 1rem 2rem;
+  z-index: 70;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.712);
+  transition: all 0.3s ease-in-out;
+}
+.product-card .noify-active {
+  top: 15rem;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+.product-card .noify-active ::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #bde343;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: both;
 }
 .product-card:hover {
   outline: 1px solid #ffab52;
@@ -1166,6 +1289,20 @@ header .container {
   font-size: 2.2rem;
   font-weight: 600;
 }
+.week-list__content__body__product__info h4 {
+  margin-bottom: 1rem;
+}
+.week-list__content__body__product__info p {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #3a3a3a;
+}
+.week-list__content__body__product__info .total-product-cost {
+  padding-top: 2rem;
+}
+.week-list__content__body__product__info .product-quantitiy {
+  font-size: 2.2rem;
+}
 .week-list__content__body__product__info .quantity {
   display: flex;
   align-items: center;
@@ -1203,4 +1340,71 @@ header .container {
   align-items: center;
   font-size: 2.2rem;
   font-weight: 600;
+}
+.week-list .week-list-form {
+  margin-top: 5rem;
+}
+.week-list .week-list-form .form-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.week-list .week-list-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.week-list .week-list-form label {
+  font-size: 2rem;
+  font-family: "Changa", sans-serif;
+  width: 13rem;
+}
+.week-list .week-list-form .day {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.week-list .week-list-form .day select {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  padding: 1rem 0;
+  background-color: transparent;
+  outline: none;
+  font-family: "Changa", sans-serif;
+  cursor: pointer;
+}
+.week-list .week-list-form .day select option {
+  font-family: "Changa", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.week-list .week-list-form .time {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.week-list .week-list-form .time input {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  padding: 1rem 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
