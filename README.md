@@ -15,7 +15,7 @@ Live Demo : &#128073; <a href="">Website Live Demo</a>
 </ul>
 <h2>Screenshot of the projects 📸</h2>
 <div style="text-align: center;">
-Home Page : &#128073;
+Home Page : 🏡
 [home page](./src/images/Rafi-Projects-screenshots/HomePage.png)
 [product page](./src/images/Rafi-Projects-screenshots/ProductPage.png)
 [week list page](./src/images/Rafi-Projects-screenshots/WeekListPage.png)
