@@ -8,7 +8,7 @@ import App from "./App.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/rafi-minimalest-e-commerce-6mv8xri41-abdalazim-dev">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </Provider>
