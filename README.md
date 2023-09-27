@@ -2,7 +2,7 @@
   <img src="/src/images/logo-images/fulllogo_transparent.png" alt="Rafi Logo"/>
 </div>
 <p>
-Rafi is a minmalist e-commerce website build with React, Redux, and scss, it's a responsive website, and it's a single page application, This website features a modern and intuitive design, with easy-to-use navigation.
+Rafi is an arabic fruits and vegetables e-commerce website build with React, Redux, and scss, it's a responsive website, and it's a single page application, This website features a modern and intuitive design, with easy-to-use navigation.
 this project was inspired by the <a href="https://www.sharbatly.club/">Sharbatly.club</a>  website, and I built this website to practice my skills in React and Redux.
 <br/>
 Live Demo : &#128073; <a href="https://rafi-viggies-fruites.vercel.app/">Website Live Demo</a>
