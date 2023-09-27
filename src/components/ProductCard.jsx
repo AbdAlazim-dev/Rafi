@@ -21,7 +21,10 @@ function ProductCard({ product, onAdd, buttonTitle }) {
         <h3>{`تم أضافة ال${product.name} لسلتك ✅  `}</h3>
       </div>
       <div className="product-card__image">
-        <Link to={`/product/${product.id}`} onClick={() => window.top(0, 0)}>
+        <Link
+          to={`/product/${product.id}`}
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <img src={product.image} alt={product.title} />
         </Link>
       </div>
