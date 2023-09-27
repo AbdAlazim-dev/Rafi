@@ -136,21 +136,29 @@
     }
   }
   .week-list-form {
-    margin-top: 5rem;
+    margin-top: 3rem;
     .form-title {
+      padding: 1rem 2rem;
       font-size: $h2-size;
       font-weight: 600;
       margin-bottom: 2rem;
       display: flex;
       align-items: center;
       gap: 1rem;
+      background-color: rgb(255, 240, 106);
+      border: 2px solid rgb(255, 230, 0);
+      border-radius: 12px;
+
+      svg {
+        color: rgb(255, 230, 0);
+      }
     }
     form {
       display: flex;
       align-items: center;
       width: 100%;
       gap: 2rem;
-      @media (max-width: 850px) {
+      @media (max-width: 650px) {
         flex-wrap: wrap;
       }
     }

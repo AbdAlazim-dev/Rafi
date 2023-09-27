@@ -1347,15 +1347,22 @@ header .container {
   font-weight: 600;
 }
 .week-list .week-list-form {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .week-list .week-list-form .form-title {
+  padding: 1rem 2rem;
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  background-color: rgb(255, 240, 106);
+  border: 2px solid rgb(255, 230, 0);
+  border-radius: 12px;
+}
+.week-list .week-list-form .form-title svg {
+  color: rgb(255, 230, 0);
 }
 .week-list .week-list-form form {
   display: flex;
@@ -1363,7 +1370,7 @@ header .container {
   width: 100%;
   gap: 2rem;
 }
-@media (max-width: 850px) {
+@media (max-width: 650px) {
   .week-list .week-list-form form {
     flex-wrap: wrap;
   }

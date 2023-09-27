@@ -31,7 +31,7 @@ function OuterProduct({ product }) {
       </div>
 
       <Link
-        onClick={() => window.top(0, 0)}
+        onClick={() => window.scrollTo(0, 0)}
         to={`/product/${product.id}`}
         className="product-link"
       >

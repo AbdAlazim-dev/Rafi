@@ -11,7 +11,7 @@ function DontMiss() {
               اضف 5 اصناف الى قائمة مقاضيك الاسبوعية واحصل على تخفيض 15%, وتجاوز
               120 ريال واحصل على توصيل مجاني اسبوعيًا
             </p>
-            <Link onClick={() => window.top(0, 0)} to="/weekly">
+            <Link onClick={() => window.scrollTo(0, 0)} to="/weekly">
               <button>تسوق</button>
             </Link>
           </div>
