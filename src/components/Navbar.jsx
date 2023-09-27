@@ -191,13 +191,13 @@ function Navbar() {
                   تسوق
                 </NavLink>
               </li>
-              <li className="buttons">
+              <li className="buttons" onClick={handleCartModal}>
                 <button className="cart-icon">
                   {cart.length > 0 && (
                     <span className="cart-items">{cart.length}</span>
                   )}
 
-                  <GrCart onClick={handleCartModal} />
+                  <GrCart />
                 </button>
                 <button className="mobile-links-icon" onClick={handleMobileNav}>
                   <GiHamburgerMenu />
