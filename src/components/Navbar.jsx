@@ -191,8 +191,8 @@ function Navbar() {
                   تسوق
                 </NavLink>
               </li>
-              <li className="buttons" onClick={handleCartModal}>
-                <button className="cart-icon">
+              <li className="buttons">
+                <button className="cart-icon" onClick={handleCartModal}>
                   {cart.length > 0 && (
                     <span className="cart-items">{cart.length}</span>
                   )}
